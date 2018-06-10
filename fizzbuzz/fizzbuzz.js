@@ -37,3 +37,5 @@ function solution2() {
         console.log(output);
     }
 }
+
+solution2();
