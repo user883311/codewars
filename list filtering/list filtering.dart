@@ -9,7 +9,7 @@ filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
 https://www.codewars.com/kata/53dbd5315a3c69eed20002dd/train/javascript
 */
 
-bool filter_list(arr) {
+bool filter_list(List arr) {
   var res = [];
   for (int i = 0; i < arr.length; i++) {
     if (arr[i].runtimeType.toString() != "String") {
