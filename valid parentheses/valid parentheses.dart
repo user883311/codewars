@@ -10,3 +10,20 @@ bool validParentheses(String braces) {
   // otherwise if smtg left, not valid
   return braces2 == "";
 }
+
+void main() {
+  print(validParentheses('()') == true);
+  print(validParentheses('()()') == true);
+  print(validParentheses('(())') == true);
+  print(validParentheses(')') == false);
+  print(validParentheses('())') == false);
+  print(validParentheses('((((()))))') == true);
+  print(validParentheses('()()()())') == false);
+  print(validParentheses('(()()()())(())') == true);
+  print(validParentheses('((((((((') == false);
+  print(validParentheses('(())((()((()))))') == true);
+  print(validParentheses('())(') == false);
+  print(validParentheses(')()()()(') == false);
+  print(validParentheses('(()()))(') == false);
+  print(validParentheses(')()(') == false);
+}
