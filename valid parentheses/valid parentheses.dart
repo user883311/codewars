@@ -1,14 +1,14 @@
 bool validParentheses(String braces) {
-  String braces2 = braces;
+  String b = braces;
   // remove all non parenthesis characters
-  braces2 = braces2.replaceAll(new RegExp(r"[^\(\)]"), "");
+  b = b.replaceAll(new RegExp(r"[^\(\)]"), "");
   // while there are "()", remove all "()"
-  while (braces2.contains("()")) {
-    braces2 = braces2.replaceAll(new RegExp(r"\(\)"), "");
+  while (b.contains("()")) {
+    b = b.replaceAll(new RegExp(r"\(\)"), "");
   }
   // if result is "" then valid
   // otherwise if smtg left, not valid
-  return braces2 == "";
+  return b.isEmpty;
 }
 
 void main() {
