@@ -17,5 +17,10 @@ int squareSum(List numbers) {
 }
 
 void main() {
-  print(squareSum([1, 2, 2])); // 9
+  print(squareSum([1, 2, 2]) == 9);
+  print(squareSum([1, 2]) == 5);
+  print(squareSum([0, 3, 4, 5]) == 50);
+  print(squareSum([]) == 0);
+  print(squareSum([-1, -2]) == 5);
+  print(squareSum([-1, 0, 1]) == 2);
 }
